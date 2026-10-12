@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer - Optimized</title>
+  
+  <!-- Critical CSS inlined for faster First Contentful Paint -->
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#333;background:#f9f9f9}.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://picsum.photos/id/1015/800/450') center/cover no-repeat;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;position:relative}.navbar{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:1.5rem 5%;background:rgba(0,0,0,.3)}.logo{font-size:1.8rem;font-weight:700;color:#fff}.nav-links{display:flex;list-style:none;gap:2rem}.nav-links a{color:#fff;text-decoration:none;font-weight:500}.hero-content h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:1rem;text-shadow:2px 2px 4px rgba(0,0,0,.5)}.hero-content p{font-size:1.2rem;margin-bottom:2rem;max-width:600px}.cta-btn{background:#ff6b35;color:#fff;border:none;padding:1rem 2.5rem;font-size:1.1rem;border-radius:50px;cursor:pointer}
+  </style>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+
+  <!-- Preconnect to image CDN -->
+  <link rel="preconnect" href="https://picsum.photos" crossorigin>
+  <link rel="dns-prefetch" href="https://picsum.photos">
+
+  <!-- Optimized fonts: only needed weights, display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">TravelExplorer</div>
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Discover the World</h1>
+      <p>Explore breathtaking destinations and create unforgettable memories.</p>
+      <button class="cta-btn" id="ctaBtn">Start Exploring</button>
+    </div>
+  </header>
+
+  <section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://picsum.photos/id/1015/400/300" 
+             srcset="https://picsum.photos/id/1015/400/300 400w, https://picsum.photos/id/1015/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Swiss Alps" loading="lazy" decoding="async">
+        <h3>Swiss Alps</h3>
+        <p>Experience the majestic peaks and serene valleys of the Swiss Alps.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1016/400/300" 
+             srcset="https://picsum.photos/id/1016/400/300 400w, https://picsum.photos/id/1016/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Maldives" loading="lazy" decoding="async">
+        <h3>Maldives</h3>
+        <p>Crystal clear waters and overwater bungalows await you.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1018/400/300" 
+             srcset="https://picsum.photos/id/1018/400/300 400w, https://picsum.photos/id/1018/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Tokyo" loading="lazy" decoding="async">
+        <h3>Tokyo</h3>
+        <p>A vibrant mix of tradition and cutting-edge technology.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1019/400/300" 
+             srcset="https://picsum.photos/id/1019/400/300 400w, https://picsum.photos/id/1019/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Sahara Desert" loading="lazy" decoding="async">
+        <h3>Sahara Desert</h3>
+        <p>Endless dunes under a star-filled sky.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1020/400/300" 
+             srcset="https://picsum.photos/id/1020/400/300 400w, https://picsum.photos/id/1020/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Amazon Rainforest" loading="lazy" decoding="async">
+        <h3>Amazon Rainforest</h3>
+        <p>Immerse yourself in the world's largest tropical rainforest.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1021/400/300" 
+             srcset="https://picsum.photos/id/1021/400/300 400w, https://picsum.photos/id/1021/600/450 600w"
+             sizes="(max-width: 600px) 100vw, 320px"
+             width="400" height="300" alt="Bali" loading="lazy" decoding="async">
+        <h3>Bali</h3>
+        <p>Temples, rice terraces, and pristine beaches.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Lazy-loaded, properly sized images with dimensions to prevent CLS -->
+      <img src="https://picsum.photos/id/1022/280/200" width="280" height="200" alt="Gallery 1" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1023/280/200" width="280" height="200" alt="Gallery 2" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1024/280/200" width="280" height="200" alt="Gallery 3" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1025/280/200" width="280" height="200" alt="Gallery 4" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1026/280/200" width="280" height="200" alt="Gallery 5" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1027/280/200" width="280" height="200" alt="Gallery 6" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1028/280/200" width="280" height="200" alt="Gallery 7" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1029/280/200" width="280" height="200" alt="Gallery 8" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1031/280/200" width="280" height="200" alt="Gallery 9" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1032/280/200" width="280" height="200" alt="Gallery 10" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1033/280/200" width="280" height="200" alt="Gallery 11" loading="lazy" decoding="async">
+      <img src="https://picsum.photos/id/1035/280/200" width="280" height="200" alt="Gallery 12" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>TravelExplorer is your trusted companion for discovering the most amazing places on Earth. We curate experiences that leave lasting impressions.</p>
+    <div id="stats"></div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TravelExplorer. All rights reserved.</p>
+  </footer>
+
+  <!-- Deferred, minified JS - non-blocking -->
+  <script src="app.min.js" defer></script>
+</body>
+</html>
